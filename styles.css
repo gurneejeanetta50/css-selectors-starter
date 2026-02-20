@@ -67,7 +67,7 @@
     add the universal CSS selector to the styles below
 */
 /* ----- */
-*{
+* {
     font-family: var(--fonts);
     line-height: 1.3;
     color: var(--dk-gray);
