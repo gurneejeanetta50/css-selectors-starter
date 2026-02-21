@@ -434,7 +434,7 @@ input, select {
     select all of the inputs on focus (by tag name/pseudo-class) on the page
 */
 /* ----- */
-input:focus {
+input:hover {
     outline: 4px solid var(--orange);
     outline-offset: 2px;
     border: none;
