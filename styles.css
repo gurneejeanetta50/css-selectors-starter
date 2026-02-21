@@ -324,7 +324,7 @@ span {
     select the h2 in the second section using the ID, tag name, and child/descendant selectors
 */
 /* ----- */
-#navigation h2 {
+#nav h2 {
     padding: 12px 0;
     background-color: var(--green);
     color: var(--white);
@@ -336,7 +336,7 @@ span {
     select the unordered list in the navigation using the tag names and child/descendant selector
 */
 /* ----- */
-#navigation ul {
+#nav ul {
     display: block;
     list-style-type: none;
     padding: 0;
@@ -349,7 +349,7 @@ span {
     select the list items in the navigation using the tag names and child/descendant selector
 */
 /* ----- */
-#navigation li {
+#nav li {
     display: block;
     width: 100%;
 }
@@ -360,7 +360,7 @@ span {
     select the anchor tags in the navigation using the tag names and child/descendant selectors
 */
 /* ----- */
-#navigation a {
+#nav a {
     display: block;
     width: 90%;
     margin: 16px auto;
@@ -381,7 +381,7 @@ span {
     select the anchor tags in the navigation on hover using the tag names, pseudo-class, and child/descendant selectors
 */
 /* ----- */
-#navigation a:hover {
+#nav a:hover {
     background-color: var(--white);
     color: var(--green);
     box-shadow: var(--box-shadow-sm);
@@ -564,9 +564,6 @@ input[type="submit"]:focus {
     select the bullets on the unordered list in the list styling section using the tag name and pseudo-class selectors
 */
 /* ----- */
-#list ul {
-    list-style-type: none;
-}
 
 #list li::before {
     font-size: 3rem;
