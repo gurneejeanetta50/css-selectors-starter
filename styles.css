@@ -398,6 +398,7 @@ span {
 */
 /* ----- */
 .third-h2 {
+    background-color: lime !important;
     padding: 12px 0;
     background-color: var(--dv-fuchsia);
     color: var(--white);
