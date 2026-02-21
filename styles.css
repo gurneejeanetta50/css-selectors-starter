@@ -594,77 +594,57 @@ input[type="submit"]:focus {
 /* --------------- */
 /* MORE STYLING SECTION CONTENT STYLES */
 /* --------------- */
-/* ----- */
-/* 
-    TO DO:
-    select all of the divs in the more styling section using the ID, descendant, and tag name selectors
-*/
-/* ----- */
+
+/* All divs inside #more → flex centering for any future content inside them */
 #more div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* More Styling - center the outermost container */
+/* Direct child of #more (the outermost container) */
 #more > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* important for absolute positioning of children */
-}
-
-/* Outermost (red) - base layer */
-#more > div:first-child {
     width: 300px;
     height: 300px;
-    background-color: var(--dv-red);
+    background-color: var(--dv-red);       /* outermost = red */
     margin: 32px auto;
-    position: relative;
+    position: relative;                    /* needed for absolute children */
 }
 
-/* Second level (orange) - overlaps red */
-#more div:nth-child(2) {
+/* All nested divs inside the outermost one – absolute centered */
+#more div div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 2nd level (first nested div) → orange, slightly smaller */
+#more > div > div:nth-child(1) {
     width: 250px;
     height: 250px;
     background-color: var(--dv-orange);
-    position: absolute; /* overlaps parent */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-/* Third level (yellow) - overlaps orange */
-#more .third {
+/* 3rd level (second nested div) → yellow */
+#more > div > div:nth-child(2) {
     width: 200px;
     height: 200px;
     background-color: var(--dv-yellow);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-/* Fourth level (mint) - overlaps yellow */
-#more div:nth-child(4) {
+/* 4th level (third nested div) → mint/greenish */
+#more > div > div:nth-child(3) {
     width: 150px;
     height: 150px;
     background-color: var(--dv-mint);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-/* Innermost level (light blue) - overlaps mint */
-#more .inner {
+/* Innermost (fourth nested div) → light blue */
+#more > div > div:nth-child(4) {
     width: 100px;
     height: 100px;
     background-color: var(--dv-lt-blue);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 /* --------------- */
