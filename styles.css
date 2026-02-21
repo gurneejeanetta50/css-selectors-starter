@@ -661,7 +661,7 @@ input[type="submit"]:focus {
     select the last div in the more styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#more-styling div:last-child {
+#more div:last-child {
     width: 100px;
     height: 100px;
     background-color: var(--dv-lt-blue);
