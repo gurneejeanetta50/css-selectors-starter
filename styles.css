@@ -397,7 +397,7 @@ span {
     select the h2 in the third section using the class name selector
 */
 /* ----- */
-third-h2 {
+.third-h2 {
     padding: 12px 0;
     background-color: var(--dv-fuchsia);
     color: var(--white);
