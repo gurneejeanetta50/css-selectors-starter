@@ -625,7 +625,7 @@ input[type="submit"]:focus {
 }
 
 /* 4th level — green (no class, so use deeper descendant or child combinator) */
-#more div > div > div {
+#more div .fourth {
     width: 150px;
     height: 150px;
     background-color: var(--dv-green);
