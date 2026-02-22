@@ -595,56 +595,57 @@ input[type="submit"]:focus {
 /* MORE STYLING SECTION CONTENT STYLES */
 /* --------------- */
 
-/* All divs inside #more → flex centering for any future content inside them */
+/* Base styles for all nested divs in the #more section */
 #more div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Direct child of #more (the outermost container) */
-#more > div {
-    width: 300px;
+    width: 300px;          /* Start with a reasonable outer size */
     height: 300px;
-    background-color: var(--dv-red);       /* outermost = red */
-    margin: 32px auto;
-    position: relative;                    /* needed for absolute children */
+    margin: 20px auto;     /* Center horizontally in the section */
+    background-color: maroon;  /* Outermost color (closest to your "maroon/red" description) */
+    border: 8px solid maroon;  /* Optional thicker border for separation */
+    position: relative;    /* Allows absolute positioning of children if needed */
 }
 
-/* All nested divs inside the outermost one – absolute centered */
+/* Each deeper level gets smaller + different color */
 #more div div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 240px;
+    background-color: #d35400;  /* Dark orange / burnt orange */
+    margin: 30px auto;         /* Centers it inside parent + creates visible border area */
+    border: 8px solid #d35400;
 }
 
-/* 2nd level (first nested div) → orange, slightly smaller */
-#more > div > div:nth-child(1) {
-    width: 250px;
-    height: 250px;
-    background-color: var(--dv-orange);
+#more div div div {
+    width: 180px;
+    height: 180px;
+    background-color: orange;   /* Bright orange/yellowish */
+    margin: 30px auto;
+    border: 8px solid orange;
 }
 
-/* 3rd level (second nested div) → yellow */
-#more > div >  div div:nth-child(2) {
-    width: 200px;
-    height: 200px;
-    background-color: var(--dv-yellow);
+/* The .third class level */
+#more div div div.third {
+    width: 120px;
+    height: 120px;
+    background-color: limegreen;  /* Green / teal-ish for next layer */
+    margin: 30px auto;
+    border: 8px solid limegreen;
 }
 
-/* 4th level (third nested div) → mint/greenish */
-#more > div > div:nth-child(3) {
-    width: 150px;
-    height: 150px;
-    background-color: var(--dv-mint);
+/* Next level inside .third */
+#more div div div.third div {
+    width: 60px;
+    height: 60px;
+    background-color: cyan;       /* Light blue / cyan for inner */
+    margin: 30px auto;
+    border: 8px solid cyan;
 }
 
-/* Innermost (fourth nested div) → light blue */
-#more > div > div:nth-child(4) {
-    width: 100px;
-    height: 100px;
-    background-color: var(--dv-lt-blue);
+/* The innermost empty div with class .inner */
+#more .inner {
+    width: 20px;
+    height: 20px;
+    background-color: lightblue;  /* Very center light blue */
+    margin: 20px auto;            /* Small center square */
 }
 
 /* --------------- */
