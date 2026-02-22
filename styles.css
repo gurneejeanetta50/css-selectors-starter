@@ -595,39 +595,66 @@ input[type="submit"]:focus {
 /* MORE STYLING SECTION CONTENT STYLES */
 /* --------------- */
 
-/* Base styles for all nested divs in the #more section */
-#more div {
+/* ----- */
+/* 
+    TO DO:
+    select all of the divs in the more styling section using the ID, descendant, and tag name selectors
+*/
+#more-styling div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----- */
+/* 
+    TO DO:
+    select the first div in the more styling section using the ID, tag name and direct descendant selectors
+*/
+#more-styling > div {
     width: 300px;
     height: 300px;
-    margin: 40px auto;
-    border: 40px solid maroon;
-    box-sizing: border-box;
-    background: orange;          /* ← changed from #d35400 to pure orange */
+    background-color: var(--dv-red);
+    margin: 16px auto;
 }
 
-#more div > div {
-    border: 30px solid orange;
-    background: yellow;          /* bright yellow, not yellowgreen yet */
-    box-sizing: border-box;
+/* ----- */
+/* 
+    TO DO:
+    select the second div in the more styling section using the ID, descendant, and tag name selectors
+*/
+#more-styling div div {
+    width: 250px;
+    height: 250px;
+    background-color: var(--dv-orange);
 }
 
-#more div > div > div {
-    border: 20px solid yellow;
-    background: yellowgreen;     /* minty green */
-    box-sizing: border-box;
+/* ----- */
+/* 
+    TO DO:
+    select the third div in the more styling section using the ID, descendant, and class name selectors
+*/
+/* Assuming the third div has a class like .third or .box (change .box if your HTML uses a different class name) */
+#more-styling div .box {
+    width: 200px;
+    height: 200px;
+    background-color: var(--dv-yellow);
 }
 
-#more div > div > div > div {
-    border: 10px solid yellowgreen;
-    background: cyan;
-    box-sizing: border-box;
+/* ----- */
+/* 
+    TO DO:
+    select the fourth div in the more styling section using the ID, tag name, descendant, and class selectors
+*/
+/* Assuming the fourth div has a class like .inner or .box (change .inner if your HTML uses a different class name) */
+#more-styling div div .inner {
+    width: 150px;
+    height: 150px;
+    background-color: var(--dv-mint);
 }
 
-#more div > div > div > div > div {
-    border: 5px solid cyan;
-    background: lightblue;
-    box-sizing: border-box;
-}
+/* ----- */
+/* 
 
 /* --------------- */
 /*  SOFTWARE LINKS (SECTION 6) CONTENT STYLES */
