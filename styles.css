@@ -600,34 +600,33 @@ input[type="submit"]:focus {
     width: 320px;
     height: 320px;
     margin: 40px auto;
-    border: 40px solid maroon;       /* Thick outer border = maroon frame */
-    box-sizing: border-box;          /* Important so padding/border doesn't add to size */
-    background: #d35400;             /* Orange under the border */
+    border: 40px solid maroon;
+    box-sizing: border-box;
+    background: orange;          /* ← changed from #d35400 to pure orange */
 }
 
-#more div div {
-    border: 40px solid #d35400;
-    background: orange;
+#more div > div {
+    border: 40px solid orange;
+    background: yellow;          /* bright yellow, not yellowgreen yet */
+    box-sizing: border-box;
 }
 
-#more div div div {
-    border: 30px solid orange;
-    background: yellowgreen;
+#more div > div > div {
+    border: 30px solid yellow;
+    background: yellowgreen;     /* minty green */
+    box-sizing: border-box;
 }
 
-#more div div div.third {
-    border: 30px solid yellowgreen;
+#more div > div > div > div {
+    border: 20px solid yellowgreen;
     background: cyan;
+    box-sizing: border-box;
 }
 
-#more div div div.third div {
-    border: 20px solid cyan;
+#more div > div > div > div > div {
+    border: 10px solid cyan;
     background: lightblue;
-}
-
-#more .inner {
-    border: 10px solid lightblue;
-    background: white;               /* Or whatever center color you want */
+    box-sizing: border-box;
 }
 
 /* --------------- */
