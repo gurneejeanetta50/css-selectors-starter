@@ -618,21 +618,21 @@ input[type="submit"]:focus {
 }
 
 /* 3rd level — yellow (uses the .third class that already exists in your HTML) */
-#more div .third {
+#more div > div > div {
     width: 200px;
     height: 200px;
     background-color: var(--dv-yellow);
 }
 
 /* 4th level — green (no class, so use deeper descendant or child combinator) */
-#more div .fourth {
+#more div > div > div > div {
     width: 150px;
     height: 150px;
     background-color: var(--dv-green);
 }
 
 /* Innermost (5th level) — blue */
-#more div .inner {
+#more div > div > div > div > div {
     width: 100px;
     height: 100px;
     background-color: var(--dv-blue);
