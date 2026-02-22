@@ -595,50 +595,47 @@ input[type="submit"]:focus {
 /* MORE STYLING SECTION CONTENT STYLES */
 /* --------------- */
 
-/* ----- */
-/* 
-    TO DO:
-    select all of the divs in the more styling section using the ID, descendant, and tag name selectors
-*/
-#more-styling div {
+/* All five divs inside #more: make them flex containers so children are centered */
+#more div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* ----- */
-/* 
-    TO DO:
-    select the first div in the more styling section using the ID, tag name and direct descendant selectors
-*/
-#more-styling > div {
+/* Outermost div (1st level) — red, largest */
+#more > div {
     width: 300px;
     height: 300px;
     background-color: var(--dv-red);
     margin: 16px auto;
 }
 
-/* ----- */
-/* 
-    TO DO:
-    select the second div in the more styling section using the ID, descendant, and tag name selectors
-*/
-#more-styling div div {
+/* 2nd level — orange */
+#more div > div {
     width: 250px;
     height: 250px;
     background-color: var(--dv-orange);
 }
 
-/* ----- */
-/* 
-    TO DO:
-    select the third div in the more styling section using the ID, descendant, and class name selectors
-*/
-/* Assuming the third div has a class like .third or .box (change .box if your HTML uses a different class name) */
-#more-styling div .box {
+/* 3rd level — yellow (uses the .third class that already exists in your HTML) */
+#more div .third {
     width: 200px;
     height: 200px;
     background-color: var(--dv-yellow);
+}
+
+/* 4th level — green (no class, so use deeper descendant or child combinator) */
+#more div div div {
+    width: 150px;
+    height: 150px;
+    background-color: var(--dv-green);
+}
+
+/* Innermost (5th level) — blue */
+#more div div div div {
+    width: 100px;
+    height: 100px;
+    background-color: var(--dv-blue);
 }
 
 /* ----- */
