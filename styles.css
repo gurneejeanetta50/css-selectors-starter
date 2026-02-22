@@ -597,8 +597,8 @@ input[type="submit"]:focus {
 
 /* Base styles for all nested divs in the #more section */
 #more div {
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
     margin: 40px auto;
     border: 40px solid maroon;
     box-sizing: border-box;
@@ -606,25 +606,25 @@ input[type="submit"]:focus {
 }
 
 #more div > div {
-    border: 40px solid orange;
+    border: 30px solid orange;
     background: yellow;          /* bright yellow, not yellowgreen yet */
     box-sizing: border-box;
 }
 
 #more div > div > div {
-    border: 30px solid yellow;
+    border: 20px solid yellow;
     background: yellowgreen;     /* minty green */
     box-sizing: border-box;
 }
 
 #more div > div > div > div {
-    border: 20px solid yellowgreen;
+    border: 10px solid yellowgreen;
     background: cyan;
     box-sizing: border-box;
 }
 
 #more div > div > div > div > div {
-    border: 10px solid cyan;
+    border: 5px solid cyan;
     background: lightblue;
     box-sizing: border-box;
 }
